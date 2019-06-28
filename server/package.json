@@ -1,0 +1,19 @@
+{
+  "name": "soned_santa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "busboy": "^0.3.1",
+    "busboy-body-parser": "^0.3.2",
+    "connect-busboy": "0.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  }
+}
