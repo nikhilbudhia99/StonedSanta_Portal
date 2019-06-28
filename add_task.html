@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>add_task</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+        
+        <input type="text" name="fname" id="fname" placeholder="nikhil">
+        <input type="text" name="lname" id="lname">
+        <input type="text" name="email" id="email">
+        <input type="text" name="password" id="password">
+        <input type="submit" value="submit" onClick="event.preventDefault(); add()">
+
+</body>
+<script type="text/javascript">
+    function add()
+    {
+        var fname=document.getElementById('fname').value;
+        var lname=document.getElementById('lname').value;
+        var email=document.getElementById('email').value;
+        var password=document.getElementById('password').value;
+        axios.post('/api/account/signup',{
+            fname:fname,
+            lname:lname,
+            email:email,
+            password:password
+        })
+    }
+</script>
+</html>
